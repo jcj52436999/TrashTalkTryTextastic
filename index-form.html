@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>TrashTalk index-form.html</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="index-form.css"/>
+
+</head>
+
+<body>
+<h1>Trash Talk Questionaire</h1>
+<br>
+<p id="index-form-opening-paragraph">
+    TRASHTALK brings together community members looking to clean their neighborhoods helps neighbors organize in their
+    Neighborhoods. Enter your address and times when you are available to volunteer. TrashTalk will show you clean-ups
+    available in your area. If there are no clean-ups, TrashTalk will provide a list of dumping sites where you can
+    start a clean-up. Finally, if you know of a dumping site that is not listed, you can add it to the list.
+</p>
+<br>
+
+
+<form action="">
+    <fieldset>
+        Enter information here about what cleanup you want to do:
+        <p id="index-form-choose-action-parag">
+        <fieldset>
+            <label for="index-form-choose-action-spinner">Choose your wanted action:</label>
+            <select id="index-form-choose-action-spinner">
+                <option value="MsgNeighb">I want to message my neighbors (on SeeClickFix)</option>
+                <option value="OrgnClnup">I want to organize a new clean up in my Neighborhood Watch Area</option>
+            </select>
+            Your message will be sent to people who are interested in cleaning a specific point.
+        </fieldset>
+        </p>
+
+        <p id="index-form-choose-area-parag">
+            <fieldset>
+                Enter your Clean up area: Pls provide an approximate address or, optionally, Lat and Long coordinates:
+
+            <p id="index-form-choose-streetnumber-parag">
+            <fieldset>
+                <label for="index-form-choose-streetnumber-text">Enter your Clean up street number: </label>
+                <textarea id="index-form-choose-streetnumber-text"
+                          rows="2"
+                          cols="10">
+              </textarea>
+            </fieldset>
+            </p>
+
+            <p id="index-form-choose-streetname-parag">
+            <fieldset>
+                <label for="index-form-choose-streetname-text">Enter your Clean up Street name: </label>
+                <textarea id="index-form-choose-streetname-text"
+                          rows="2"
+                          cols="20">
+                </textarea>
+            </fieldset>
+            </p>
+
+            <p id="index-form-choose-streettyoe-parag">
+            <fieldset>
+                <label for="index-form-choose-streettype-text">Enter your Clean up street type: </label>
+                <textarea id="index-form-choose-streettype-text"
+                          rows="2"
+                          cols="10">
+                </textarea>
+            </fieldset>
+            </p>
+
+            <p id="index-form-choose-city-parag">
+            <fieldset>
+                <label for="index-form-choose-city-text">Enter your Clean up city: </label>
+                <textarea id="index-form-choose-city-text"
+                          rows="2"
+                          cols="10">
+                </textarea>
+            <label for="index-form-choose-state-text">   Enter your Clean up state: </label>
+            <textarea id="index-form-choose-state-text"
+                      rows="2"
+                      cols="10">
+                    </textarea>
+
+            </fieldset>
+            </p>
+
+
+    </fieldset>
+    </p>
+
+    <p id="index-form-choose-date-parag">
+    <fieldset>
+        <label for="index-form-choose-date-applet">Enter your desired date for cleanup: </label>
+        <input type=date id="index-form-choose-date-applet">
+    </fieldset>
+    </p>
+
+    <p id="index-form-choose-time-parag">
+    <fieldset>
+        <label for="index-form-choose-time-applet">Enter your desired time for cleanup: </label>
+        <input type=time id="index-form-choose-time-applet">
+    </fieldset>
+    </p>
+
+    <p id="index-form-comments-parag">
+    <fieldset>
+        <label for="index-form-comments-text">Put any additional message or description HERE :</label>
+        <textarea id="index-form-comments-text"
+                  rows="10"
+                  cols="60">
+    </textarea>
+    </fieldset>
+    </p>
+
+    <p id="index-form-email-entry-parag">
+    <fieldset>
+        <label for="index-form-email">If you want to be contacted for neighborhood cleanups in the future.... Pls
+            include your email:</label>
+        <input type="email"
+               id="index-form-email"/>
+    </fieldset>
+    </p>
+
+    </fieldset>
+</form>
+<input type="button" value="SHIP DATA" onclick="showFormFields();"/>
+
+</body>
+
+</html>
